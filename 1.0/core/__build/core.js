@@ -1,0 +1,1 @@
+seajs.config({alias:{jquery:"jquery/1.6.2/jquery"}}),define("./core",["../cart/cart"],function(a){var b=a("../cart/cart");return b});
