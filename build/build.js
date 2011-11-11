@@ -53,5 +53,6 @@ function mkdirS(dir) {
 }
 
 function cp(source, dest, callback) {
-  require('child_process').exec('cp '+source+' '+dest, callback);
+  var command = process.platform === 'win32' ? 'copy' : 'cp';
+  require('child_process').exec(command + ' '+source+' '+dest, callback);
 }

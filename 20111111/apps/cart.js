@@ -1,2 +1,2 @@
-define("./cart",["../mods/submit","jquery"],function(a){var b=a("../mods/submit"),c=a("jquery");return{init:function(){b.init(),console.log("inited")}}});
+seajs.config({alias:{jquery:"jquery/1.6.2/jquery"}}),define("./cart",["../mods/submit","jquery"],function(a){var b=a("../mods/submit"),c=a("jquery");return{init:function(){b.init(),console.log("inited")}}});
 define("../mods/submit",[],function(){return{init:function(){console.log("submit.js")}}});
